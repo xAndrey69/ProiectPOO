@@ -1,0 +1,11 @@
+MAP_SIZE: 20 20 // Dimensiuni harta
+MAX_TICKS: 1000 // Durata simularii
+MAX_STATIONS: 3 // Nr statii extra
+CLIENTS_COUNT: 10 // Nr puncte de livrare (D)
+// Flota de start
+DRONES: 3
+ROBOTS: 2
+SCOOTERS: 1
+// Dinamica
+TOTAL_PACKAGES: 50
+SPAWN_FREQUENCY: 10 // Apare un pachet la fiecare 10 ticks

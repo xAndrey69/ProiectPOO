@@ -1,0 +1,29 @@
+=== RAPORT FINAL SIMULARE HIVEMIND ===
+
+SETARI:
+Ticks totali: 1000
+Ticks rulati: 1000
+Dimensiune harta: 20x20
+Agenti initiali: 6
+Pachete generate: 50
+
+STATISTICI OPERATIONALE:
+Agenti supravietuiti: 3
+Agenti pierduti: 3
+Pachete livrate: 50
+Pachete nelivrate: 0
+Rata de succes: 100.00%
+
+STATISTICI FINANCIARE:
+Venituri totale: 24668 credite
+Costuri totale: 2984 credite
+Penalizari totale: 1700 credite
+  - Agent mort: 1500 credite
+  - Pachete intarziate: 200 credite (50 per pachet)
+  - Pachete nelivrate: 0 credite (200 per pachet)
+PROFIT NET: 19984 credite
+
+DETALII AGENTI:
+Drone: 0/3 supravietuitoare
+Roboti: 2/2 supravietuitoare
+Scutere: 1/1 supravietuitoare

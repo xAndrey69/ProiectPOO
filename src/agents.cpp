@@ -1,6 +1,6 @@
 #include "agents.h"
 #include "map.h"
-#include "hivemind.h" // Pentru struct Package
+#include "hivemind.h" 
 #include <queue>
 #include <vector>
 #include <algorithm>
@@ -10,56 +10,6 @@
 
 using namespace std;
 
-// Helper pentru BFS pathfinding
-// static Point findNextStepBFS(const Point& start, const Point& target, const Map& map) {
-//     if (start == target) return start;
-    
-//     int h = map.getHeight();
-//     int w = map.getWidth();
-    
-//     vector<vector<bool>> visited(h, vector<bool>(w, false));
-//     vector<vector<Point>> parent(h, vector<Point>(w, {-1, -1}));
-//     queue<Point> q;
-    
-//     q.push(start);
-//     visited[start.y][start.x] = true;
-    
-//     // Direcții: sus, jos, stânga, dreapta
-//     const int dx[] = {0, 0, -1, 1};
-//     const int dy[] = {-1, 1, 0, 0};
-    
-//     while (!q.empty()) {
-//         Point current = q.front();
-//         q.pop();
-        
-//         if (current == target) {
-//             // Reconstruim calea până la primul pas
-//             Point step = target;
-//             while (parent[step.y][step.x] != start && parent[step.y][step.x].x != -1) {
-//                 step = parent[step.y][step.x];
-//             }
-//             return (step == start) ? target : step;
-//         }
-        
-//         for (int i = 0; i < 4; i++) {
-//             int nx = current.x + dx[i];
-//             int ny = current.y + dy[i];
-            
-//             if (nx >= 0 && nx < w && ny >= 0 && ny < h && !visited[ny][nx]) {
-//                 char cell = map.getCell(nx, ny);
-//                 if (cell != CELL_WALL) {
-//                     visited[ny][nx] = true;
-//                     parent[ny][nx] = current;
-//                     q.push({nx, ny});
-//                 }
-//             }
-//         }
-//     }
-    
-//     // Niciun drum găsit - rămâne pe loc
-//     return start;
-// }
-
 static Point findNextStepBFS(const Point& start, const Point& target, const Map& map) {
     if (start == target) return start;
 
@@ -67,24 +17,19 @@ static Point findNextStepBFS(const Point& start, const Point& target, const Map&
     int w = map.getWidth();
     int area = h * w;
 
-    // 1. MEMORIE STATICA PER THREAD (Nu se aloca/dezaloca niciodata dupa prima rulare)
-    // Folosim int in loc de bool pentru a folosi un "token" de rulare
-    // thread_local inseamna ca fiecare din cele 24 de nuclee are propriul vector
     static thread_local std::vector<int> visited;
     static thread_local std::vector<int> parent;
-    static thread_local std::vector<int> q_vec; // Folosim vector pe post de queue (mai rapid)
-    static thread_local int runToken = 0; // Contor pentru a nu mai face "clear"
-
-    // Initializare doar la prima rulare (sau daca se schimba harta)
+    static thread_local std::vector<int> q_vec;
+    static thread_local int runToken = 0;
+    
     if ((int)visited.size() != area) {
         visited.assign(area, 0);
         parent.assign(area, -1);
-        q_vec.resize(area); // Pre-alocam marimea maxima posibila
+        q_vec.resize(area); 
     }
 
-    // Incrementam token-ul. Orice celula cu visited[i] == runToken e "vizitata" in tura asta.
     runToken++;
-    if (runToken == 0) { // Overflow protection (foarte rar)
+    if (runToken == 0) { 
         std::fill(visited.begin(), visited.end(), 0);
         runToken = 1;
     }
@@ -200,15 +145,12 @@ void Agent::updatePosition(Point newPos) {
     position = newPos;
 }
 
-// Implementare Drone
 Drone::Drone(int id, int x, int y) 
     : Agent(id, x, y, DRONE, 100.0f, 10.0f, 15) {}
 
 void Drone::move(const Map& map) {
     (void)map;
 
-    // float currentCons = (state == MOVING) ? consumption : (consumption * 0.05f);
-    // battery -= currentCons;
     battery -= consumption;
     if (battery <= 0) {
         battery = 0;
@@ -218,7 +160,6 @@ void Drone::move(const Map& map) {
     
     if (state != MOVING) return;
     
-    // Drona se mișcă în linie dreaptă, ignorând obstacolele
     int speed = static_cast<int>(getSpeed());
     
     for (int i = 0; i < speed && position != target; i++) {
@@ -228,7 +169,6 @@ void Drone::move(const Map& map) {
         else if (position.y > target.y) position.y--;
     }
     
-    // Verifică dacă a ajuns la destinație
     if (position == target) {
 	if (currentPackage != nullptr && !hasPhysicalPackage) {
             if (position == map.getBasePosition()) {
@@ -239,22 +179,17 @@ void Drone::move(const Map& map) {
         
         else if (currentPackage != nullptr && hasPhysicalPackage) {
             state = IDLE;
-        }
-        // CAZUL: CHARGING (Am ajuns la stație)
-        else {
+        } else {
             state = IDLE;
         }
     }
 }
 
-// Implementare Robot
 Robot::Robot(int id, int x, int y) 
     : Agent(id, x, y, ROBOT, 300.0f, 2.0f, 1) {}
 
 void Robot::move(const Map& map) {
     
-    // float currentCons = (state == MOVING) ? consumption : (consumption * 0.05f);
-    // battery -= currentCons;
     battery -= consumption;
     if (battery <= 0) {
         battery = 0;
@@ -263,14 +198,14 @@ void Robot::move(const Map& map) {
     }
 
     if (state != MOVING) return;
-    // Robotul folosește pathfinding pentru a evita zidurile
+    
     if (position != target) {
         Point nextStep = findNextStepBFS(position, target, map);
         position = nextStep;
     }
     
-    // Verifică dacă a ajuns la destinație
-   if (position == target) {
+    
+    if (position == target) {
 	if (currentPackage != nullptr && !hasPhysicalPackage) {
             if (position == map.getBasePosition()) {
                 hasPhysicalPackage = true;        
@@ -280,23 +215,17 @@ void Robot::move(const Map& map) {
         
         else if (currentPackage != nullptr && hasPhysicalPackage) {
             state = IDLE;
-        }
-        // CAZUL: CHARGING (Am ajuns la stație)
-        else {
+        } else {
             state = IDLE;
         }
     }
 }
 
-// Implementare Scooter
 Scooter::Scooter(int id, int x, int y) 
     : Agent(id, x, y, SCOOTER, 200.0f, 5.0f, 4) {}
 
 void Scooter::move(const Map& map) {
     
-    
-    //float currentCons = (state == MOVING) ? consumption : (consumption * 0.05f);
-    // battery -= currentCons;
     battery -= consumption;
     if (battery <= 0) {
         battery = 0;
@@ -305,7 +234,7 @@ void Scooter::move(const Map& map) {
     }
     
     if (state != MOVING) return;
-    // Scooterul se mișcă cu viteza 2, folosind pathfinding
+
     int speed = static_cast<int>(getSpeed());
     
     for (int i = 0; i < speed && position != target; i++) {
@@ -313,7 +242,7 @@ void Scooter::move(const Map& map) {
         position = nextStep;
     }
     
-    // Verifică dacă a ajuns la destinație
+
     if (position == target) {
 	if (currentPackage != nullptr && !hasPhysicalPackage) {
             if (position == map.getBasePosition()) {
@@ -324,15 +253,12 @@ void Scooter::move(const Map& map) {
         
         else if (currentPackage != nullptr && hasPhysicalPackage) {
             state = IDLE;
-        }
-        // CAZUL: CHARGING (Am ajuns la stație)
-        else {
+        } else {
             state = IDLE;
         }
     }
 }
 
-// Implementare AgentFactory
 unique_ptr<Agent> AgentFactory::create(AgentType type, int id, int x, int y) {
     switch (type) {
         case DRONE:
@@ -342,6 +268,6 @@ unique_ptr<Agent> AgentFactory::create(AgentType type, int id, int x, int y) {
         case SCOOTER:
             return unique_ptr<Agent>(new Scooter(id, x, y));
         default:
-            return nullptr;
+            throw std::invalid_argument("AgentFactory: nu s-a gasit tipul de agent");
     }
 }

@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <iomanip>
 #include <memory>
+#include <stdexcept>
 
 using namespace std;
 
@@ -273,7 +274,7 @@ void Simulation::run() {
           //       << " | Pachete livrate: " << packagesDelivered 
           //       << " | Agenti activi: " << agentsAlive << endl;
 
-            logEvent("--- HEARTBEAT: Tick " + to_string(currentTick) + " ---"); // In fisier
+            logEvent("--- HEARTBEAT spawnPackages();: Tick " + to_string(currentTick) + " ---"); // In fisier
         }
         
         spawnPackages();
@@ -323,8 +324,7 @@ void Simulation::saveStatistics() {
     ofstream report("simulation_report.txt");
     
     if (!report.is_open()) {
-        cerr << "Eroare: Nu pot crea fisierul de raport!\n";
-        return;
+        throw std::runtime_error("Eroare: Nu pot crea fisierul de raport!");
     }
     
     long long totalProfit = totalRevenue - totalCosts - totalPenalties;
@@ -378,32 +378,5 @@ void Simulation::saveStatistics() {
 }
 
 void Simulation::printFinalReport() const {
-//    long long totalProfit = totalRevenue - totalCosts - totalPenalties;
-    
-//     cout << "\n========================================\n";
-//     cout << "          RAPORT FINAL SIMULARE\n";
-//     cout << "========================================\n";
-//     cout << "PERFORMANTA OPERATIONALA:\n";
-//     cout << "  Agenti supravietuiti: " << agentsAlive << "/" << agents.size() 
-//          << " (" << fixed << setprecision(1) 
-//          << (agents.size() ? (agentsAlive * 100.0 / agents.size()) : 0) << "%)\n";
-//     cout << "  Pachete livrate: " << packagesDelivered << "/" << packages.size()
-//          << " (" << fixed << setprecision(1) 
-//          << (packages.empty() ? 0.0 : (packagesDelivered * 100.0 / packages.size())) 
-//          << "%)\n\n";
-    
-//     cout << "REZULTATE FINANCIARE:\n";
-//     cout << "  Venituri: " << totalRevenue << " credite\n";
-//     cout << "  Costuri:  " << totalCosts << " credite\n";
-//     cout << "  Penalizari: " << totalPenalties << " credite\n";
-//     cout << "  --------------------\n";
-//     cout << "  PROFIT NET: " << totalProfit << " credite\n\n";
-    
-//     if (totalProfit > 0) {
-//         cout << "  REZULTAT: PROFITABIL! ✓\n";
-//     } else {
-//         cout << "  REZULTAT: PIERDERE! ✗\n";
-//     }
-    
-//     cout << "========================================\n";
+   //NOT IMPLEMENTED
  }

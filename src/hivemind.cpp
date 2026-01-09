@@ -43,9 +43,7 @@ bool HiveMind::needsCharging(const Agent* agent, const Point& destination, const
         distToCharger = Point::distance(destination, nearestCharger);
     }
 
-   // double safetyFactor = (agent->getType() == DRONE) ? 1.1 : 1.8;
-    
-    double totalDist = (distToBase + distToDest + distToCharger); //* safetyFactor;
+    double totalDist = (distToBase + distToDest + distToCharger);
     
     float batteryNeeded = totalDist * agent->getConsumption() / agent->getSpeed();
     float safetyMargin = batteryNeeded * (params.safeBatteryMargin / 100.0f);

@@ -3,6 +3,7 @@
 #include <iostream>
 #include <queue>
 #include <random>
+#include <stdexcept>
 
 void Map::init(int h, int w) {
     height = h;
@@ -111,6 +112,6 @@ void ProceduralMapGenerator::generate(Map& map) {
     }
 
     if (!valid) {
-	throw "Eroare: Harta invalida dupa multiple incercari.\n";
+	throw std::runtime_error("Eroare: Harta invalida dupa multiple incercari.");
     }
 }

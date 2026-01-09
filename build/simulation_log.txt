@@ -3,77 +3,119 @@
 [TICK 0] Simularea este gata să înceapă.
 [TICK 0] === SIMULARE INCEPUTA ===
 [TICK 0] Simulare pornita. Max ticks: 1000
-[TICK 10] Generat pachet 0 cu reward 326 si deadline la tick 26
-[TICK 20] Generat pachet 1 cu reward 381 si deadline la tick 39
-[TICK 24] Pachet 1 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] la timp.
-[TICK 30] Generat pachet 2 cu reward 346 si deadline la tick 48
-[TICK 32] Pachet 0 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (6 ticks). Penalizare: 50 credite
-[TICK 37] Pachet 2 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] la timp.
-[TICK 40] Generat pachet 3 cu reward 686 si deadline la tick 57
-[TICK 42] Pachet 3 RECEPTIONAT de client. Livrat de Agent 0 [DRONA] la timp.
-[TICK 50] Generat pachet 4 cu reward 303 si deadline la tick 66
-[TICK 54] Pachet 4 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] la timp.
-[TICK 60] Generat pachet 5 cu reward 460 si deadline la tick 70
-[TICK 70] Generat pachet 6 cu reward 213 si deadline la tick 80
-[TICK 71] Pachet 5 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] cu intarziere (1 ticks). Penalizare: 50 credite
-[TICK 80] Generat pachet 7 cu reward 762 si deadline la tick 95
-[TICK 90] Generat pachet 8 cu reward 632 si deadline la tick 103
-[TICK 96] Pachet 8 RECEPTIONAT de client. Livrat de Agent 0 [DRONA] la timp.
-[TICK 96] Pachet 7 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] cu intarziere (1 ticks). Penalizare: 50 credite
-[TICK 97] Pachet 6 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (17 ticks). Penalizare: 50 credite
-[TICK 99] !!! DECES AGENT !!! ID: 0 [DRONE] a murit la coordonatele (3, 15). Baterie epuizata.
+[TICK 10] Generat pachet 0 cu reward 363 si deadline la tick 25
+[TICK 20] Generat pachet 1 cu reward 257 si deadline la tick 35
+[TICK 24] Pachet 0 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] la timp.
+[TICK 30] Generat pachet 2 cu reward 471 si deadline la tick 44
+[TICK 37] Pachet 2 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
+[TICK 38] Pachet 1 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (3 ticks). Penalizare: 50 credite
+[TICK 40] Generat pachet 3 cu reward 209 si deadline la tick 52
+[TICK 50] Generat pachet 4 cu reward 441 si deadline la tick 64
+[TICK 60] Generat pachet 5 cu reward 318 si deadline la tick 78
+[TICK 60] Pachet 4 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
+[TICK 70] Generat pachet 6 cu reward 489 si deadline la tick 85
+[TICK 80] Generat pachet 7 cu reward 360 si deadline la tick 93
+[TICK 80] Pachet 3 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (28 ticks). Penalizare: 50 credite
+[TICK 87] Pachet 7 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
+[TICK 90] Generat pachet 8 cu reward 290 si deadline la tick 104
+[TICK 95] Pachet 5 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (17 ticks). Penalizare: 50 credite
 [TICK 100] --- HEARTBEAT: Tick 100 ---
-[TICK 100] Generat pachet 9 cu reward 608 si deadline la tick 112
-[TICK 109] !!! DECES AGENT !!! ID: 1 [DRONE] a murit la coordonatele (16, 14). Baterie epuizata.
-[TICK 110] Generat pachet 10 cu reward 647 si deadline la tick 126
-[TICK 114] Pachet 10 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] la timp.
-[TICK 118] !!! DECES AGENT !!! ID: 2 [DRONE] a murit la coordonatele (16, 14). Baterie epuizata.
-[TICK 120] Generat pachet 11 cu reward 429 si deadline la tick 138
-[TICK 130] Generat pachet 12 cu reward 690 si deadline la tick 148
-[TICK 140] Generat pachet 13 cu reward 484 si deadline la tick 153
-[TICK 145] Pachet 12 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 150] Generat pachet 14 cu reward 754 si deadline la tick 167
-[TICK 150] Pachet 11 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (12 ticks). Penalizare: 50 credite
-[TICK 158] Pachet 9 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (46 ticks). Penalizare: 50 credite
-[TICK 160] Generat pachet 15 cu reward 533 si deadline la tick 176
-[TICK 167] Pachet 13 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] cu intarziere (14 ticks). Penalizare: 50 credite
-[TICK 170] Generat pachet 16 cu reward 335 si deadline la tick 187
-[TICK 180] Generat pachet 17 cu reward 300 si deadline la tick 199
-[TICK 180] Pachet 16 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 184] Pachet 17 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 190] Generat pachet 18 cu reward 201 si deadline la tick 202
-[TICK 191] !!! DECES AGENT !!! ID: 5 [SCOOTER] a murit la coordonatele (1, 5). Baterie epuizata.
-[TICK 196] Pachet 14 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (29 ticks). Penalizare: 50 credite
+[TICK 100] Generat pachet 9 cu reward 661 si deadline la tick 113
+[TICK 104] Pachet 9 RECEPTIONAT de client. Livrat de Agent 0 [DRONA] la timp.
+[TICK 110] Generat pachet 10 cu reward 509 si deadline la tick 123
+[TICK 118] Pachet 10 RECEPTIONAT de client. Livrat de Agent 0 [DRONA] la timp.
+[TICK 119] !!! DECES AGENT !!! ID: 0 [DRONE] a murit la coordonatele (11, 14). Baterie epuizata.
+[TICK 120] Generat pachet 11 cu reward 470 si deadline la tick 138
+[TICK 130] Generat pachet 12 cu reward 478 si deadline la tick 143
+[TICK 132] Pachet 11 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
+[TICK 139] Pachet 8 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (35 ticks). Penalizare: 50 credite
+[TICK 139] Pachet 6 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (54 ticks). Penalizare: 50 credite
+[TICK 140] Generat pachet 13 cu reward 663 si deadline la tick 158
+[TICK 150] Generat pachet 14 cu reward 618 si deadline la tick 161
+[TICK 152] Pachet 13 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
+[TICK 154] Pachet 14 RECEPTIONAT de client. Livrat de Agent 1 [DRONA] la timp.
+[TICK 160] Generat pachet 15 cu reward 517 si deadline la tick 179
+[TICK 170] Generat pachet 16 cu reward 410 si deadline la tick 182
+[TICK 178] Pachet 16 RECEPTIONAT de client. Livrat de Agent 1 [DRONA] la timp.
+[TICK 179] !!! DECES AGENT !!! ID: 1 [DRONE] a murit la coordonatele (16, 9). Baterie epuizata.
+[TICK 180] Generat pachet 17 cu reward 415 si deadline la tick 200
+[TICK 188] Pachet 12 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (45 ticks). Penalizare: 50 credite
+[TICK 190] Generat pachet 18 cu reward 773 si deadline la tick 202
+[TICK 194] Pachet 18 RECEPTIONAT de client. Livrat de Agent 2 [DRONA] la timp.
 [TICK 200] --- HEARTBEAT: Tick 200 ---
-[TICK 200] Generat pachet 19 cu reward 537 si deadline la tick 220
-[TICK 210] Generat pachet 20 cu reward 590 si deadline la tick 228
-[TICK 214] Pachet 15 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (38 ticks). Penalizare: 50 credite
-[TICK 220] Generat pachet 21 cu reward 660 si deadline la tick 234
-[TICK 230] Generat pachet 22 cu reward 404 si deadline la tick 245
-[TICK 237] Pachet 18 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (35 ticks). Penalizare: 50 credite
-[TICK 240] Generat pachet 23 cu reward 291 si deadline la tick 260
-[TICK 250] Generat pachet 24 cu reward 790 si deadline la tick 261
-[TICK 258] Pachet 22 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (13 ticks). Penalizare: 50 credite
-[TICK 260] Generat pachet 25 cu reward 243 si deadline la tick 272
-[TICK 270] Generat pachet 26 cu reward 551 si deadline la tick 287
-[TICK 280] Generat pachet 27 cu reward 227 si deadline la tick 290
-[TICK 282] Pachet 21 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (48 ticks). Penalizare: 50 credite
-[TICK 286] Pachet 24 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (25 ticks). Penalizare: 50 credite
-[TICK 290] Generat pachet 28 cu reward 758 si deadline la tick 301
+[TICK 200] Generat pachet 19 cu reward 678 si deadline la tick 211
+[TICK 200] Pachet 15 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (21 ticks). Penalizare: 50 credite
+[TICK 210] Generat pachet 20 cu reward 337 si deadline la tick 226
+[TICK 220] Generat pachet 21 cu reward 328 si deadline la tick 238
+[TICK 230] Generat pachet 22 cu reward 619 si deadline la tick 248
+[TICK 237] Pachet 17 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (37 ticks). Penalizare: 50 credite
+[TICK 238] Pachet 22 RECEPTIONAT de client. Livrat de Agent 2 [DRONA] la timp.
+[TICK 239] !!! DECES AGENT !!! ID: 2 [DRONE] a murit la coordonatele (11, 14). Baterie epuizata.
+[TICK 240] Generat pachet 23 cu reward 635 si deadline la tick 257
+[TICK 250] Generat pachet 24 cu reward 305 si deadline la tick 266
+[TICK 253] Pachet 23 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
+[TICK 258] Pachet 20 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (32 ticks). Penalizare: 50 credite
+[TICK 260] Generat pachet 25 cu reward 749 si deadline la tick 273
+[TICK 270] Generat pachet 26 cu reward 601 si deadline la tick 289
+[TICK 280] Generat pachet 27 cu reward 519 si deadline la tick 290
+[TICK 282] Pachet 26 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
+[TICK 285] Pachet 19 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (74 ticks). Penalizare: 50 credite
+[TICK 290] Generat pachet 28 cu reward 777 si deadline la tick 309
 [TICK 300] --- HEARTBEAT: Tick 300 ---
-[TICK 300] Generat pachet 29 cu reward 499 si deadline la tick 314
-[TICK 310] Generat pachet 30 cu reward 329 si deadline la tick 322
-[TICK 320] Generat pachet 31 cu reward 643 si deadline la tick 338
-[TICK 330] Generat pachet 32 cu reward 201 si deadline la tick 341
-[TICK 333] Pachet 23 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (73 ticks). Penalizare: 50 credite
-[TICK 336] !!! DECES AGENT !!! ID: 4 [ROBOT] a murit la coordonatele (1, 5). Baterie epuizata.
-[TICK 340] Generat pachet 33 cu reward 348 si deadline la tick 354
-[TICK 350] Generat pachet 34 cu reward 339 si deadline la tick 360
-[TICK 360] Generat pachet 35 cu reward 769 si deadline la tick 371
-[TICK 370] Generat pachet 36 cu reward 294 si deadline la tick 390
-[TICK 380] Generat pachet 37 cu reward 436 si deadline la tick 390
-[TICK 383] !!! DECES AGENT !!! ID: 3 [ROBOT] a murit la coordonatele (1, 5). Baterie epuizata.
-[TICK 383] Toti agentii au murit! Simularea se opreste prematur.
-[TICK 383] Raport salvat in simulation_report.txt
-[TICK 383] === SIMULARE TERMINATA ===
-[TICK 383] Durata: 2 ms
+[TICK 300] Generat pachet 29 cu reward 242 si deadline la tick 315
+[TICK 303] Pachet 25 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (30 ticks). Penalizare: 50 credite
+[TICK 303] Pachet 28 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
+[TICK 310] Generat pachet 30 cu reward 490 si deadline la tick 329
+[TICK 320] Generat pachet 31 cu reward 449 si deadline la tick 331
+[TICK 324] Pachet 30 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
+[TICK 330] Generat pachet 32 cu reward 425 si deadline la tick 346
+[TICK 340] Generat pachet 33 cu reward 535 si deadline la tick 355
+[TICK 340] Pachet 29 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (25 ticks). Penalizare: 50 credite
+[TICK 341] Pachet 32 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
+[TICK 350] Generat pachet 34 cu reward 383 si deadline la tick 362
+[TICK 351] Pachet 31 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] cu intarziere (20 ticks). Penalizare: 50 credite
+[TICK 354] Pachet 21 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (116 ticks). Penalizare: 50 credite
+[TICK 360] Generat pachet 35 cu reward 788 si deadline la tick 378
+[TICK 370] Generat pachet 36 cu reward 219 si deadline la tick 386
+[TICK 370] Pachet 33 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] cu intarziere (15 ticks). Penalizare: 50 credite
+[TICK 375] Pachet 34 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (13 ticks). Penalizare: 50 credite
+[TICK 380] Generat pachet 37 cu reward 793 si deadline la tick 393
+[TICK 390] Generat pachet 38 cu reward 296 si deadline la tick 401
+[TICK 395] Pachet 37 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] cu intarziere (2 ticks). Penalizare: 50 credite
+[TICK 396] Pachet 35 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (18 ticks). Penalizare: 50 credite
+[TICK 400] --- HEARTBEAT: Tick 400 ---
+[TICK 400] Generat pachet 39 cu reward 461 si deadline la tick 416
+[TICK 410] Generat pachet 40 cu reward 348 si deadline la tick 427
+[TICK 412] Pachet 38 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] cu intarziere (11 ticks). Penalizare: 50 credite
+[TICK 420] Generat pachet 41 cu reward 367 si deadline la tick 434
+[TICK 420] Pachet 36 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (34 ticks). Penalizare: 50 credite
+[TICK 430] Generat pachet 42 cu reward 368 si deadline la tick 446
+[TICK 439] Pachet 39 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (23 ticks). Penalizare: 50 credite
+[TICK 440] Generat pachet 43 cu reward 312 si deadline la tick 452
+[TICK 450] Generat pachet 44 cu reward 402 si deadline la tick 461
+[TICK 456] Pachet 44 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
+[TICK 460] Generat pachet 45 cu reward 759 si deadline la tick 478
+[TICK 470] Generat pachet 46 cu reward 600 si deadline la tick 482
+[TICK 470] Pachet 45 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
+[TICK 478] Pachet 40 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (51 ticks). Penalizare: 50 credite
+[TICK 480] Generat pachet 47 cu reward 762 si deadline la tick 495
+[TICK 481] Pachet 46 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
+[TICK 490] Generat pachet 48 cu reward 364 si deadline la tick 500
+[TICK 490] Pachet 41 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (56 ticks). Penalizare: 50 credite
+[TICK 500] --- HEARTBEAT: Tick 500 ---
+[TICK 500] Generat pachet 49 cu reward 365 si deadline la tick 515
+[TICK 505] Pachet 48 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] cu intarziere (5 ticks). Penalizare: 50 credite
+[TICK 522] Pachet 49 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (7 ticks). Penalizare: 50 credite
+[TICK 536] Pachet 47 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (41 ticks). Penalizare: 50 credite
+[TICK 558] Pachet 42 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (112 ticks). Penalizare: 50 credite
+[TICK 593] Pachet 43 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (141 ticks). Penalizare: 50 credite
+[TICK 600] --- HEARTBEAT: Tick 600 ---
+[TICK 622] Pachet 24 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (356 ticks). Penalizare: 50 credite
+[TICK 651] Pachet 27 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (361 ticks). Penalizare: 50 credite
+[TICK 700] --- HEARTBEAT: Tick 700 ---
+[TICK 800] --- HEARTBEAT: Tick 800 ---
+[TICK 900] --- HEARTBEAT: Tick 900 ---
+[TICK 1000] --- HEARTBEAT: Tick 1000 ---
+[TICK 1000] Raport salvat in simulation_report.txt
+[TICK 1000] === SIMULARE TERMINATA ===
+[TICK 1000] Durata: 4 ms

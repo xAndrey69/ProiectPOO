@@ -3,6 +3,7 @@
 #include <sstream>
 #include <iostream>
 #include <cstdlib>
+#include <stdexcept>
 
 Config* Config::instance = nullptr;
 
@@ -19,8 +20,7 @@ Config* Config::getInstance() {
 void Config::loadFromFile(const std::string& filename) {
     std::ifstream file(filename);
     if (!file.is_open()) {
-        std::cerr << "Eroare Fatala: Nu pot deschide " << filename << ". Aplicatia se va inchide.\n";
-        exit(1);
+	std::runtime_error("Eroare deschidere fisier: " + filename);
     }
 
     std::string line, key;

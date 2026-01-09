@@ -60,7 +60,6 @@ private:
             : agent(a), package(p), score(s), estimatedProfit(ep), 
               estimatedDeliveryTime(edt), energyRisk(er) {}
         
-        // Pentru sortare
         bool operator<(const AssignmentScore& other) const {
             return score < other.score;
         }

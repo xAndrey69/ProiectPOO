@@ -9,7 +9,6 @@
 
 using namespace std;
 
-// Găsește cel mai apropiat punct de încărcare
 Point HiveMind::findNearestChargingPoint(const Point& position, const Map& map) const {
     Point nearest = map.getBasePosition();
     int minDist = Point::distance(position, nearest);
@@ -26,22 +25,27 @@ Point HiveMind::findNearestChargingPoint(const Point& position, const Map& map) 
     return nearest;
 }
 
-// Verifică dacă agentul are nevoie să se încarce înainte de misiune
 bool HiveMind::needsCharging(const Agent* agent, const Point& destination, const Map& map) const {
-    // Dacă e dronă și are destulă baterie, nu are nevoie să se încarce special
-    if (agent->getType() == DRONE) {
-        // Dronele au baterie mică - verifică dacă poate face drumul dus-întors
-        int dist = Point::distance(agent->getPosition(), destination);
-        float batteryNeeded = dist * agent->getConsumption() / agent->getSpeed();
-        return agent->getBattery() < batteryNeeded * 1.5f; // Marjă de 50%
-    }
-    
-    // Pentru roboți și scutere: verifică dacă poate ajunge la destinație și înapoi la o stație
+    Point base = map.getBasePosition();
     Point nearestCharger = findNearestChargingPoint(destination, map);
+
+    double distToBase, distToDest, distToCharger;
+
+    if (agent->getType() == DRONE) {
+        // Euclidian pentru Drone
+        distToBase = std::hypot(base.x - agent->getPosition().x, base.y - agent->getPosition().y);
+        distToDest = std::hypot(destination.x - agent->getPosition().x, destination.y - agent->getPosition().y);
+        distToCharger = std::hypot(nearestCharger.x - destination.x, nearestCharger.y - destination.y);
+    } else {
+        // Manhattan pentru Roboți/Scutere
+        distToBase = Point::distance(agent->getPosition(), base);
+        distToDest = Point::distance(agent->getPosition(), destination);
+        distToCharger = Point::distance(destination, nearestCharger);
+    }
+
+   // double safetyFactor = (agent->getType() == DRONE) ? 1.1 : 1.8;
     
-    int distToDest = Point::distance(agent->getPosition(), destination);
-    int distToCharger = Point::distance(destination, nearestCharger);
-    int totalDist = distToDest + distToCharger;
+    double totalDist = (distToBase + distToDest + distToCharger); //* safetyFactor;
     
     float batteryNeeded = totalDist * agent->getConsumption() / agent->getSpeed();
     float safetyMargin = batteryNeeded * (params.safeBatteryMargin / 100.0f);
@@ -49,7 +53,7 @@ bool HiveMind::needsCharging(const Agent* agent, const Point& destination, const
     return agent->getBattery() < (batteryNeeded + safetyMargin);
 }
 
-// Estimează timpul de livrare (în ticks)
+
 int HiveMind::estimateDeliveryTime(const Agent* agent, const Point& destination) const {
 
     double distance;
@@ -71,17 +75,45 @@ int HiveMind::estimateDeliveryTime(const Agent* agent, const Point& destination)
 
 // Estimează costul livrării
 double HiveMind::estimateDeliveryCost(const Agent* agent, int deliveryTime) const {
-    // Cost = cost_per_tick * timp + consum * timp (consumul e deja în cost?)
-    // În specificație, cost_per_tick include deja consumul
+    // Cost = cost_per_tick * timp
     return agent->getOperationalCost() * deliveryTime;
 }
 
-// Calculează scorul pentru o atribuire specifică
+
 double HiveMind::calculateAssignmentScore(Agent* agent, Package* package,
-                                         const Map& map, int currentTick) const {
-    // Verifică dacă agentul poate livra pachetul
+const Map& map, int currentTick) const {
+    Point base = map.getBasePosition();
+    Point charger = findNearestChargingPoint(package->destCoord, map);
+    
+    double distToPickup, distToDeliver, distToSafety;
+    
+    if (agent->getType() == DRONE) {
+        // Dronele zboară în linie dreaptă (Euclidian)
+        distToPickup = std::hypot(base.x - agent->getPosition().x, base.y - agent->getPosition().y);
+        distToDeliver = std::hypot(package->destCoord.x - base.x, package->destCoord.y - base.y);
+        distToSafety = std::hypot(charger.x - package->destCoord.x, charger.y - package->destCoord.y);
+    } else {
+
+        distToPickup = Point::distance(agent->getPosition(), base);
+        distToDeliver = Point::distance(base, package->destCoord);
+        distToSafety = Point::distance(package->destCoord, charger);
+    }
+    
+    // Factor de siguranță: 
+    // 1.1 pentru Drone (mică eroare de rotunjire)
+    // 2.0 pentru Roboți/Scutere (pentru a compensa ocolirea zidurilor generate procedural)
+    double safetyFactor = (agent->getType() == DRONE) ? 1.1 : 2.0;
+    
+    double totalDistance = (distToPickup + distToDeliver + distToSafety) * safetyFactor;
+    
+    double maxRange = (agent->getBattery() / agent->getConsumption()) * agent->getSpeed();
+    
+    if (totalDistance > maxRange) {
+        return -1000.0; 
+    }
+    
     if (agent->getBatteryPercentage() < params.criticalBatteryThreshold) {
-        return -1000.0; // Agentul are baterie critică - nu îi da misiuni
+        return -1000.0; 
     }
     
     // Estimează timpul și costul
@@ -96,7 +128,7 @@ double HiveMind::calculateAssignmentScore(Agent* agent, Package* package,
     int timeUntilDeadline = package->deadline - currentTick;
     
      if (deliveryTime > timeUntilDeadline) {
-        delayPenalty = 50.0; // DOAR 50 de credite pentru întârziere
+        delayPenalty = 50.0; 
     }
     
     double netProfit = grossProfit - delayPenalty;
@@ -159,14 +191,8 @@ void HiveMind::handleLowBatteryAgents(vector<Agent*>& agents, const Map& map) {
         if (!agent->isAlive() || agent->getState() == CHARGING) continue;
         
         float batteryPercent = agent->getBatteryPercentage();
-        
-        // Baterie critică - trimite imediat la încărcare
+      
         if (batteryPercent < params.criticalBatteryThreshold) {
-            Point charger = findNearestChargingPoint(agent->getPosition(), map);
-            agent->sendToCharge(charger);
-        }
-        // Baterie scăzută și nu are misiune - se duce să se încarce preventiv
-        else if (batteryPercent < params.lowBatteryThreshold && !agent->isBusy()) {
             Point charger = findNearestChargingPoint(agent->getPosition(), map);
             agent->sendToCharge(charger);
         }
@@ -176,7 +202,6 @@ void HiveMind::handleLowBatteryAgents(vector<Agent*>& agents, const Map& map) {
 // Atribuie pachetele agenților
 void HiveMind::assignPackages(vector<Agent*>& agents, vector<Package*>& packages,
                              const Map& map, int currentTick) {
-    // Colectează toate scorurile posibile
     vector<AssignmentScore> allScores;
     
     for (auto agent : agents) {
@@ -185,10 +210,9 @@ void HiveMind::assignPackages(vector<Agent*>& agents, vector<Package*>& packages
         for (auto package : packages) {
             if (package->assigned || package->delivered) continue;
             
-            // Verifică dacă agentul poate livra acest pachet
             double score = calculateAssignmentScore(agent, package, map, currentTick);
             
-            if (score > 0) { // Ignoră atribuirile cu scor negativ
+            if (score > 0) { 
                 allScores.emplace_back(agent, package, score, 
                                       package->reward - estimateDeliveryCost(agent, 
                                       estimateDeliveryTime(agent, package->destCoord)),
@@ -235,7 +259,7 @@ void HiveMind::assignPackages(vector<Agent*>& agents, vector<Package*>& packages
                 Point charger = findNearestChargingPoint(score.agent->getPosition(), map);
                 score.agent->sendToCharge(charger);
             } else {
-                score.agent->assignTask(score.package, score.package->destCoord);
+                score.agent->assignTask(score.package, map.getBasePosition());
                 score.package->assigned = true;
             }
             
@@ -245,12 +269,10 @@ void HiveMind::assignPackages(vector<Agent*>& agents, vector<Package*>& packages
     }
 }
 
-// Optimizează agenții inactivi
 void HiveMind::optimizeIdleAgents(vector<Agent*>& agents, const Map& map) {
     for (auto agent : agents) {
         if (!agent->isAlive() || agent->isBusy()) continue;
         
-        // Dacă agentul este idle și nu are baterie plină, îl trimitem la încărcare
         if (agent->getState() == IDLE && agent->getBatteryPercentage() < 90.0f) {
             Point charger = findNearestChargingPoint(agent->getPosition(), map);
             if (agent->getPosition() != charger) {
@@ -260,16 +282,12 @@ void HiveMind::optimizeIdleAgents(vector<Agent*>& agents, const Map& map) {
     }
 }
 
-// Metoda principală de update
 void HiveMind::update(vector<Agent*>& agents, vector<Package*>& packages,
                      const Map& map, int currentTick) {
     
-    // 1. Gestionează agenții cu baterie critică/scăzută
     handleLowBatteryAgents(agents, map);
     
-    // 2. Atribuie pachetele
     assignPackages(agents, packages, map, currentTick);
     
-    // 3. Optimizează agenții inactivi
     optimizeIdleAgents(agents, map);
 }

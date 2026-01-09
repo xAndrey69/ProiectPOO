@@ -3,8 +3,8 @@
 #include <random>
 #include <chrono>
 #include <algorithm>
-#include <iomanip> // Pentru setprecision și fixed
-#include <memory>  // Pentru std::unique_ptr și std::make_unique
+#include <iomanip>
+#include <memory>
 
 using namespace std;
 
@@ -41,22 +41,10 @@ void Simulation::initialize() {
     
     logEvent("=== INITIALIZARE SIMULARE ===");
     
-    // Generează harta
     mapGenerator->generate(*map);
     totalTicks = config->maxTicks;
     
-    // Generează agenții inițiali
     generateInitialAgents();
-    
-    // Afișează informații inițiale
-    // cout << "=== HIVEMIND SIMULATOR ===\n";
-    // cout << "Harta: " << config->mapWidth << "x" << config->mapHeight << "\n";
-    // cout << "Durata: " << totalTicks << " ticks\n";
-    // cout << "Agenti: " << agents.size() << " (D:" << config->dronesCount 
-    //      << " R:" << config->robotsCount << " S:" << config->scootersCount << ")\n";
-    // cout << "Pachete totale: " << config->totalPackages << "\n";
-    // cout << "Frecventa spawn: la fiecare " << config->spawnFrequency << " ticks\n";
-    // cout << "==========================\n\n";
     
     logEvent("Simularea este gata să înceapă.");
 }
@@ -67,23 +55,20 @@ void Simulation::generateInitialAgents() {
     
     int agentId = 0;
     
-    // Creează drone
     for (int i = 0; i < config->dronesCount; i++) {
         agents.push_back(std::unique_ptr<Agent>(AgentFactory::create(DRONE, agentId++, basePos.x, basePos.y)));
     }
     
-    // Creează roboți
     for (int i = 0; i < config->robotsCount; i++) {
         agents.push_back(std::unique_ptr<Agent>(AgentFactory::create(ROBOT, agentId++, basePos.x, basePos.y)));
     }
     
-    // Creează scutere
     for (int i = 0; i < config->scootersCount; i++) {
         agents.push_back(std::unique_ptr<Agent>(AgentFactory::create(SCOOTER, agentId++, basePos.x, basePos.y)));
     }
     
     agentsAlive = agents.size();
-    logEvent("Creati " + to_string(agents.size()) + " agenti initiali.");
+    logEvent("Creati " + to_string(agentsAlive) + " agenti initiali.");
 }
 
 void Simulation::spawnPackages() {
@@ -104,7 +89,6 @@ void Simulation::spawnPackages() {
     uniform_int_distribution<int> clientDist(0, (int)mapClients.size() - 1);
     int clientIdx = clientDist(gen);
     
-    // Creează noul pachet cu unique_ptr
     auto newPackage = std::unique_ptr<Package>(new Package(
         (int)packages.size(),
         mapClients[clientIdx],
@@ -114,7 +98,6 @@ void Simulation::spawnPackages() {
         clientIdx
     ));
     
-    // Adaugă pachetul la vector
     packages.push_back(std::move(newPackage));
     
     logEvent("Generat pachet " + to_string(packages.back()->id) + 
@@ -129,82 +112,76 @@ void Simulation::updateAgents() {
         Point pos = agent->getPosition();
         char cell = map->getCell(pos.x, pos.y);
         
-        // Verifică dacă e parcat
         bool onChargingCell = (cell == CELL_BASE || cell == CELL_STATION);
 
-        //debug pt drone
-	if (agent->getType() == DRONE) {
-            double distToTarget = 0.0;
-            string statusTarget = "Idle";
+        // //debug pt drone
+	// if (agent->getType() == DRONE) {
+        //     double distToTarget = 0.0;
+        //     string statusTarget = "Idle";
 
-            // Calculam distanta daca are un pachet (targetul e destinatia pachetului)
-            if (agent->getPackage()) {
-                Point dest = agent->getPackage()->destCoord;
-                // Distanta Euclidiana
-                distToTarget = std::hypot(dest.x - pos.x, dest.y - pos.y);
-                statusTarget = "Livrare Pachet " + to_string(agent->getPackage()->id);
-            } 
-            // Optional: Daca nu are pachet dar se misca spre statie, ai putea calcula distanta pana acolo
-            // dar momentan ne concentram pe pachet.
+        //     // Calculam distanta daca are un pachet (targetul e destinatia pachetului)
+        //     if (agent->getPackage()) {
+        //         Point dest = agent->getPackage()->destCoord;
+        //         // Distanta Euclidiana
+        //         distToTarget = std::hypot(dest.x - pos.x, dest.y - pos.y);
+        //         statusTarget = "Livrare Pachet " + to_string(agent->getPackage()->id);
+        //     } 
+        //     // Optional: Daca nu are pachet dar se misca spre statie, ai putea calcula distanta pana acolo
+        //     // dar momentan ne concentram pe pachet.
 
-            // Construim mesajul de telemetrie
-            // Format: [DRONE ID] Bat: 85.5% | Pos: (10, 20) | Target: 45.2m
+        //     // Construim mesajul de telemetrie
+        //     // Format: [DRONE ID] Bat: 85.5% | Pos: (10, 20) | Target: 45.2m
             
-            // Nota: Logarea la fiecare tick va genera un fisier foarte mare!
-            // Folosim string stream pentru formatare frumoasa a float-urilor
-            std::stringstream ss;
-            ss << "[TELEMETRIE DRONA " << agent->getId() << "] "
-               << "Bat: " << std::fixed << std::setprecision(1) << agent->getBatteryPercentage() << "% | "
-               << "Pos: (" << pos.x << "," << pos.y << ") | "
-               << "Status: " << statusTarget;
+        //     // Nota: Logarea la fiecare tick va genera un fisier foarte mare!
+        //     // Folosim string stream pentru formatare frumoasa a float-urilor
+        //     std::stringstream ss;
+        //     ss << "[TELEMETRIE DRONA " << agent->getId() << "] "
+        //        << "Bat: " << std::fixed << std::setprecision(1) << agent->getBatteryPercentage() << "% | "
+        //        << "Pos: (" << pos.x << "," << pos.y << ") | "
+        //        << "Status: " << statusTarget;
             
-            if (agent->getPackage()) {
-                ss << " | Dist. Dest: " << std::fixed << std::setprecision(2) << distToTarget;
-            }
+        //     if (agent->getPackage()) {
+        //         ss << " | Dist. Dest: " << std::fixed << std::setprecision(2) << distToTarget;
+        //     }
 
-            logEvent(ss.str());
-        }
+        //     logEvent(ss.str());
+        // }
 	
-        // 1. CALCUL COSTURI
-        // Taxăm doar dacă se mișcă (pleacă/vine) sau stă degeaba în câmp
-        // NU taxăm dacă e pe stație și stă cuminte (IDLE/CHARGING)
+	//taxam daca e in miscare sau daca e idle
         if (!onChargingCell || agent->getState() == MOVING) {
             totalCosts += agent->getOperationalCost();
         }
         
-        // 2. LOGICA DE STARE
-        // Dacă e pe stație și NU vrea să plece (nu e MOVING), atunci încarcă
         if (onChargingCell && agent->getState() != MOVING) {
             
             if (agent->getBatteryPercentage() < 100.0f) {
-                // --- FIX CRITIC AICI ---
-                // Trebuie să setăm explicit starea, altfel funcția charge() s-ar putea să nu facă nimic
 
-		if (agent->getType() == DRONE && agent->getState() != CHARGING) {
-                    std::stringstream ssCharge;
-                    ssCharge << "[INFO] Drona " << agent->getId() 
-                             << " a ajuns la statie si INCEPE INCARCAREA. (Baterie curenta: " 
-                             << std::fixed << std::setprecision(1) << agent->getBatteryPercentage() << "%)";
-                    logEvent(ssCharge.str());
-                }
+		//debug pt drone
+		// if (agent->getType() == DRONE && agent->getState() != CHARGING) {
+                //     std::stringstream ssCharge;
+                //     ssCharge << "[INFO] Drona " << agent->getId() 
+                //              << " a ajuns la statie si INCEPE INCARCAREA. (Baterie curenta: " 
+                //              << std::fixed << std::setprecision(1) << agent->getBatteryPercentage() << "%)";
+                //     logEvent(ssCharge.str());
+                // }
 		
                 agent->setState(CHARGING); 
                 agent->charge();
                 
             } else {
-                // E plin, îl trecem pe IDLE ca să fie pregătit de plecare
-		if (agent->getType() == DRONE && agent->getState() == CHARGING) {
-                     logEvent("[INFO] Drona " + to_string(agent->getId()) + " a TERMINAT incarcarea (100%).");
-                }
+                // Bateria e la 100%
+		//debug drone
+		// if (agent->getType() == DRONE && agent->getState() == CHARGING) {
+                //      logEvent("[INFO] Drona " + to_string(agent->getId()) + " a TERMINAT incarcarea (100%).");
+                // }
                 agent->setState(IDLE);
             }
             
         } else {
-            // --- MIȘCARE ---
+            // state = MOVING sau IDLE dar nu pe charging cell
             float batteryBefore = agent->getBattery();
             agent->move(*map);
-            
-            // Verificare deces
+           
             if (!agent->isAlive() && batteryBefore > 0) {
 
 		string typeStr;
@@ -215,8 +192,7 @@ void Simulation::updateAgents() {
                     default: typeStr = "NECUNOSCUT"; break;
                 }
 
-                // Presupunând că ai o metodă getId() în clasa Agent. 
-                // Dacă nu ai getId(), poți folosi indexul din buclă sau doar tipul.
+
                 Point deathPos = agent->getPosition();
                 logEvent("!!! DECES AGENT !!! ID: " + to_string(agent->getId()) + 
                          " [" + typeStr + "] a murit la coordonatele (" + 
@@ -227,7 +203,6 @@ void Simulation::updateAgents() {
                 agentsAlive--;
                 totalPenalties += 500;
                 if (agent->isBusy()) {
-                    // Resetare pachet
                     Package* pkg = agent->getPackage();
                     if (pkg) { 
                         pkg->assigned = false; 
@@ -240,15 +215,14 @@ void Simulation::updateAgents() {
 }
 
 void Simulation::processDeliveries() {
-    for (auto& agent : agents) { // Folosim referință
+    for (auto& agent : agents) {
+	
         if (!agent->isAlive() || !agent->isBusy()) continue;
         
         Package* package = agent->getPackage();
         if (!package) continue;
         
-        // Verifică dacă agentul a ajuns la destinație
         if (agent->getPosition() == package->destCoord) {
-            // Marchează ca livrat
             package->delivered = true;
             packagesDelivered++;
             totalRevenue += package->reward;
@@ -259,10 +233,8 @@ void Simulation::processDeliveries() {
                                  (agent->getType() == DRONE ? "DRONA" : 
                                   (agent->getType() == ROBOT ? "ROBOT" : "SCUTER")) + "]";
             
-            // Verifică întârzierea
             if (currentTick > package->deadline) {
-                // 50 credite penalizare pentru întârziere
-                totalPenalties += 50;
+		totalPenalties += 50;
 		int delay = currentTick - package->deadline;
                 logEvent(deliveryMsg + " cu intarziere (" + to_string(delay) + 
                         " ticks). Penalizare: 50 credite");
@@ -270,7 +242,6 @@ void Simulation::processDeliveries() {
                 logEvent(deliveryMsg + " la timp.");
             }
             
-            // Eliberează agentul
             agent->dropPackage();
         }
     }
@@ -278,7 +249,7 @@ void Simulation::processDeliveries() {
 
 void Simulation::checkAgentStatus() {
     agentsAlive = 0;
-    for (auto& agent : agents) { // Folosim referință
+    for (auto& agent : agents) {
         if (agent->isAlive()) {
             agentsAlive++;
         }
@@ -288,7 +259,6 @@ void Simulation::checkAgentStatus() {
 void Simulation::run() {
     Config* config = Config::getInstance();
     
-   // cout << "Simularea a inceput...\n";
     logEvent("=== SIMULARE INCEPUTA ===");
 
     logEvent("Simulare pornita. Max ticks: " + to_string(config->maxTicks));
@@ -299,40 +269,33 @@ void Simulation::run() {
         currentTick++;
         
         if (currentTick % 100 == 0) {
-           // cout << "Tick " << currentTick << "/" << totalTicks 
+          // cout << "Tick " << currentTick << "/" << totalTicks 
           //       << " | Pachete livrate: " << packagesDelivered 
           //       << " | Agenti activi: " << agentsAlive << endl;
 
             logEvent("--- HEARTBEAT: Tick " + to_string(currentTick) + " ---"); // In fisier
         }
         
-        // Pasul 1: Generează pachete noi
         spawnPackages();
         
-        // Pasul 2: Actualizează HiveMind (algoritmul de decizie)
-        // Vector de pointeri brute pentru HiveMind
         vector<Agent*> rawAgents;
         for (auto& agent : agents) {
-            rawAgents.push_back(agent.get()); // .get() pentru pointer brut
+            rawAgents.push_back(agent.get());
         }
         
         vector<Package*> rawPackages;
         for (auto& package : packages) {
-            rawPackages.push_back(package.get()); // .get() pentru pointer brut
+            rawPackages.push_back(package.get()); 
         }
         
         hiveMind->update(rawAgents, rawPackages, *map, currentTick);
         
-        // Pasul 3: Actualizează agenții (mișcare, consum, etc.)
         updateAgents();
         
-        // Pasul 4: Procesează livrările
         processDeliveries();
         
-        // Pasul 5: Verifică statusul agenților
         checkAgentStatus();
         
-        // Dacă toți agenții au murit, oprește simularea prematur
         if (agentsAlive == 0) {
             logEvent("Toti agentii au murit! Simularea se opreste prematur.");
             break;
@@ -342,23 +305,16 @@ void Simulation::run() {
     chrono::high_resolution_clock::time_point endTime = chrono::high_resolution_clock::now();
     chrono::milliseconds duration = chrono::duration_cast<chrono::milliseconds>(endTime - startTime);
     
-    // Calculează penalizările finale pentru pachetele nelivrate
     for (auto& package : packages) {
         if (!package->delivered) {
-            totalPenalties += 200; // 200 credite pentru nelivrare
+            totalPenalties += 200;
             packagesFailed++;
         }
     }
     
-    // Salvează statisticile finale
-    if (enableLogging) {
-        saveStatistics();
-    }
+
+    saveStatistics();
     
-    // Afișează raportul final
-    printFinalReport();
-    
-  //  cout << "\nSimularea a durat " << duration.count() << " ms\n";
     logEvent("=== SIMULARE TERMINATA ===");
     logEvent("Durata: " + to_string(duration.count()) + " ms");
 }
@@ -389,8 +345,8 @@ void Simulation::saveStatistics() {
     report << "Rata de succes: " << fixed << setprecision(2) 
            << (packages.empty() ? 0.0 : (packagesDelivered * 100.0 / packages.size())) 
            << "%\n\n";
-    
     report << "STATISTICI FINANCIARE:\n";
+    report << "Profit Maxim: " << totalRevenue - totalCosts << " credite\n";
     report << "Venituri totale: " << totalRevenue << " credite\n";
     report << "Costuri totale: " << totalCosts << " credite\n";
     report << "Penalizari totale: " << totalPenalties << " credite\n";

@@ -3,691 +3,77 @@
 [TICK 0] Simularea este gata să înceapă.
 [TICK 0] === SIMULARE INCEPUTA ===
 [TICK 0] Simulare pornita. Max ticks: 1000
-[TICK 1] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 1] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 1] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 2] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 2] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 2] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 3] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 3] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 3] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 4] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 4] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 4] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 5] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 5] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 5] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 6] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 6] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 6] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 7] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 7] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 7] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 8] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 8] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 8] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 9] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 9] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 9] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 10] Generat pachet 0 cu reward 590 si deadline la tick 27
-[TICK 10] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 10] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 10] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 11] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 11] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 11] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 12] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 12] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 12] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 13] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 13] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 13] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 14] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 14] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 14] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 15] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 15] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 15] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 16] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 16] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 16] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 17] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 17] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 17] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 18] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 18] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 18] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 19] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 19] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 19] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 20] Generat pachet 1 cu reward 264 si deadline la tick 34
-[TICK 20] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 20] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 20] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 21] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 21] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 21] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 22] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 22] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 22] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 23] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 23] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 23] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 24] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 24] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 24] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 25] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 25] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 25] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 26] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 26] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 26] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 27] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 27] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 27] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 28] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 28] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 28] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 29] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 29] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 29] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 30] Generat pachet 2 cu reward 648 si deadline la tick 43
-[TICK 30] [TELEMETRIE DRONA 0] Bat: 100.0% | Pos: (15,12) | Status: Livrare Pachet 2 | Dist. Dest: 12.08
-[TICK 30] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 30] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 31] [TELEMETRIE DRONA 0] Bat: 90.0% | Pos: (12,12) | Status: Livrare Pachet 2 | Dist. Dest: 9.43
-[TICK 31] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 31] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 32] [TELEMETRIE DRONA 0] Bat: 80.0% | Pos: (9,12) | Status: Livrare Pachet 2 | Dist. Dest: 7.07
-[TICK 32] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 32] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 33] [TELEMETRIE DRONA 0] Bat: 70.0% | Pos: (6,12) | Status: Livrare Pachet 2 | Dist. Dest: 5.39
-[TICK 33] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 33] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 34] [TELEMETRIE DRONA 0] Bat: 60.0% | Pos: (4,11) | Status: Livrare Pachet 2 | Dist. Dest: 4.00
-[TICK 34] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 34] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 35] [TELEMETRIE DRONA 0] Bat: 50.0% | Pos: (4,8) | Status: Livrare Pachet 2 | Dist. Dest: 1.00
-[TICK 35] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 35] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 35] Pachet 2 RECEPTIONAT de client. Livrat de Agent 0 [DRONA] la timp.
-[TICK 35] Pachet 0 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (8 ticks). Penalizare: 50 credite
-[TICK 36] [TELEMETRIE DRONA 0] Bat: 40.0% | Pos: (4,7) | Status: Idle
-[TICK 36] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 36] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 37] [TELEMETRIE DRONA 0] Bat: 30.0% | Pos: (7,7) | Status: Idle
-[TICK 37] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 37] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 38] [TELEMETRIE DRONA 0] Bat: 20.0% | Pos: (8,9) | Status: Idle
-[TICK 38] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 38] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 39] [TELEMETRIE DRONA 0] Bat: 10.0% | Pos: (8,12) | Status: Idle
-[TICK 39] !!! DECES AGENT !!! ID: 0 [DRONE] a murit la coordonatele (8, 12). Baterie epuizata.
-[TICK 39] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 39] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 40] Generat pachet 3 cu reward 575 si deadline la tick 59
-[TICK 40] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 40] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 41] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 41] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 42] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 42] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 43] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 43] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 44] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 44] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 45] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 45] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 45] Pachet 1 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (11 ticks). Penalizare: 50 credite
-[TICK 46] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 46] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 47] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 47] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 48] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 48] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 48] Pachet 3 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 49] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 49] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 50] Generat pachet 4 cu reward 372 si deadline la tick 63
-[TICK 50] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 50] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 51] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 51] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 52] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 52] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 53] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 53] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 54] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 54] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 55] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 55] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 56] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 56] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 57] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 57] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 58] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 58] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 59] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 59] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 60] Generat pachet 5 cu reward 749 si deadline la tick 70
-[TICK 60] [TELEMETRIE DRONA 1] Bat: 100.0% | Pos: (15,12) | Status: Livrare Pachet 5 | Dist. Dest: 9.22
-[TICK 60] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 61] [TELEMETRIE DRONA 1] Bat: 90.0% | Pos: (12,12) | Status: Livrare Pachet 5 | Dist. Dest: 7.62
-[TICK 61] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 61] Pachet 4 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] la timp.
-[TICK 62] [TELEMETRIE DRONA 1] Bat: 80.0% | Pos: (9,12) | Status: Livrare Pachet 5 | Dist. Dest: 7.00
-[TICK 62] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 63] [TELEMETRIE DRONA 1] Bat: 70.0% | Pos: (9,9) | Status: Livrare Pachet 5 | Dist. Dest: 4.00
-[TICK 63] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 64] [TELEMETRIE DRONA 1] Bat: 60.0% | Pos: (9,6) | Status: Livrare Pachet 5 | Dist. Dest: 1.00
-[TICK 64] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 64] Pachet 5 RECEPTIONAT de client. Livrat de Agent 1 [DRONA] la timp.
-[TICK 65] [TELEMETRIE DRONA 1] Bat: 50.0% | Pos: (9,5) | Status: Idle
-[TICK 65] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 66] [TELEMETRIE DRONA 1] Bat: 40.0% | Pos: (12,5) | Status: Idle
-[TICK 66] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 67] [TELEMETRIE DRONA 1] Bat: 30.0% | Pos: (12,2) | Status: Idle
-[TICK 67] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 68] [TELEMETRIE DRONA 1] Bat: 20.0% | Pos: (12,0) | Status: Idle
-[TICK 68] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 69] [TELEMETRIE DRONA 1] Bat: 10.0% | Pos: (12,0) | Status: Idle
-[TICK 69] !!! DECES AGENT !!! ID: 1 [DRONE] a murit la coordonatele (12, 0). Baterie epuizata.
-[TICK 69] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 70] Generat pachet 6 cu reward 555 si deadline la tick 89
-[TICK 70] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 71] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 72] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 73] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 74] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 75] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 76] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 76] Pachet 6 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] la timp.
-[TICK 77] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 78] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 79] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 80] Generat pachet 7 cu reward 666 si deadline la tick 96
-[TICK 80] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 81] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 82] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 83] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 84] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 85] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 86] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 87] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 87] Pachet 7 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 88] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 89] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 90] Generat pachet 8 cu reward 264 si deadline la tick 102
-[TICK 90] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 91] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 92] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 93] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 94] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 95] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 96] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 97] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 98] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 99] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
+[TICK 10] Generat pachet 0 cu reward 326 si deadline la tick 26
+[TICK 20] Generat pachet 1 cu reward 381 si deadline la tick 39
+[TICK 24] Pachet 1 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] la timp.
+[TICK 30] Generat pachet 2 cu reward 346 si deadline la tick 48
+[TICK 32] Pachet 0 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (6 ticks). Penalizare: 50 credite
+[TICK 37] Pachet 2 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] la timp.
+[TICK 40] Generat pachet 3 cu reward 686 si deadline la tick 57
+[TICK 42] Pachet 3 RECEPTIONAT de client. Livrat de Agent 0 [DRONA] la timp.
+[TICK 50] Generat pachet 4 cu reward 303 si deadline la tick 66
+[TICK 54] Pachet 4 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] la timp.
+[TICK 60] Generat pachet 5 cu reward 460 si deadline la tick 70
+[TICK 70] Generat pachet 6 cu reward 213 si deadline la tick 80
+[TICK 71] Pachet 5 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] cu intarziere (1 ticks). Penalizare: 50 credite
+[TICK 80] Generat pachet 7 cu reward 762 si deadline la tick 95
+[TICK 90] Generat pachet 8 cu reward 632 si deadline la tick 103
+[TICK 96] Pachet 8 RECEPTIONAT de client. Livrat de Agent 0 [DRONA] la timp.
+[TICK 96] Pachet 7 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] cu intarziere (1 ticks). Penalizare: 50 credite
+[TICK 97] Pachet 6 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (17 ticks). Penalizare: 50 credite
+[TICK 99] !!! DECES AGENT !!! ID: 0 [DRONE] a murit la coordonatele (3, 15). Baterie epuizata.
 [TICK 100] --- HEARTBEAT: Tick 100 ---
-[TICK 100] Generat pachet 9 cu reward 215 si deadline la tick 116
-[TICK 100] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 101] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 102] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 102] Pachet 8 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] la timp.
-[TICK 103] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 103] Pachet 9 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] la timp.
-[TICK 104] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 105] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 106] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 107] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 108] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 109] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 110] Generat pachet 10 cu reward 334 si deadline la tick 124
-[TICK 110] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 110] Pachet 10 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] la timp.
-[TICK 111] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 112] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 113] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 114] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 115] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 116] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 117] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 118] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 119] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 120] Generat pachet 11 cu reward 608 si deadline la tick 135
-[TICK 120] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 120] Pachet 11 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] la timp.
-[TICK 121] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 122] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 123] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 124] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 125] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 126] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 127] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 128] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 129] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 130] Generat pachet 12 cu reward 448 si deadline la tick 142
-[TICK 130] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 131] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 132] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 133] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 133] Pachet 12 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 134] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 135] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 136] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 137] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 138] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 139] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 140] Generat pachet 13 cu reward 384 si deadline la tick 158
-[TICK 140] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 141] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 142] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 143] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 144] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 145] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 146] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 147] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 148] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 149] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 150] Generat pachet 14 cu reward 541 si deadline la tick 163
-[TICK 150] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 150] Pachet 14 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] la timp.
-[TICK 151] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 152] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 152] Pachet 13 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] la timp.
-[TICK 153] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 154] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 155] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 156] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 157] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 158] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 159] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 160] Generat pachet 15 cu reward 489 si deadline la tick 180
-[TICK 160] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 160] Pachet 15 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 161] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 162] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 163] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 164] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 165] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 166] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 167] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 168] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 169] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 170] Generat pachet 16 cu reward 503 si deadline la tick 186
-[TICK 170] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 171] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 172] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 173] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 174] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 175] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 176] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 177] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 178] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 178] Pachet 16 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 179] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 180] Generat pachet 17 cu reward 388 si deadline la tick 199
-[TICK 180] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 181] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 182] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 183] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 184] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 185] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 186] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 187] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 188] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 188] Pachet 17 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] la timp.
-[TICK 189] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 190] Generat pachet 18 cu reward 487 si deadline la tick 206
-[TICK 190] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 190] Pachet 18 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] la timp.
-[TICK 191] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 192] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 193] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 194] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 195] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 196] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 197] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 198] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 199] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
+[TICK 100] Generat pachet 9 cu reward 608 si deadline la tick 112
+[TICK 109] !!! DECES AGENT !!! ID: 1 [DRONE] a murit la coordonatele (16, 14). Baterie epuizata.
+[TICK 110] Generat pachet 10 cu reward 647 si deadline la tick 126
+[TICK 114] Pachet 10 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] la timp.
+[TICK 118] !!! DECES AGENT !!! ID: 2 [DRONE] a murit la coordonatele (16, 14). Baterie epuizata.
+[TICK 120] Generat pachet 11 cu reward 429 si deadline la tick 138
+[TICK 130] Generat pachet 12 cu reward 690 si deadline la tick 148
+[TICK 140] Generat pachet 13 cu reward 484 si deadline la tick 153
+[TICK 145] Pachet 12 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
+[TICK 150] Generat pachet 14 cu reward 754 si deadline la tick 167
+[TICK 150] Pachet 11 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (12 ticks). Penalizare: 50 credite
+[TICK 158] Pachet 9 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (46 ticks). Penalizare: 50 credite
+[TICK 160] Generat pachet 15 cu reward 533 si deadline la tick 176
+[TICK 167] Pachet 13 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] cu intarziere (14 ticks). Penalizare: 50 credite
+[TICK 170] Generat pachet 16 cu reward 335 si deadline la tick 187
+[TICK 180] Generat pachet 17 cu reward 300 si deadline la tick 199
+[TICK 180] Pachet 16 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
+[TICK 184] Pachet 17 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
+[TICK 190] Generat pachet 18 cu reward 201 si deadline la tick 202
+[TICK 191] !!! DECES AGENT !!! ID: 5 [SCOOTER] a murit la coordonatele (1, 5). Baterie epuizata.
+[TICK 196] Pachet 14 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (29 ticks). Penalizare: 50 credite
 [TICK 200] --- HEARTBEAT: Tick 200 ---
-[TICK 200] Generat pachet 19 cu reward 511 si deadline la tick 218
-[TICK 200] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 200] Pachet 19 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] la timp.
-[TICK 201] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 202] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 203] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 204] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 205] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 206] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 207] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 208] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 209] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 210] Generat pachet 20 cu reward 356 si deadline la tick 229
-[TICK 210] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 211] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 212] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 213] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 214] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 215] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 216] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 217] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 218] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 219] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 220] Generat pachet 21 cu reward 600 si deadline la tick 240
-[TICK 220] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 221] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 222] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 223] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 224] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 224] Pachet 20 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] la timp.
-[TICK 225] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 226] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 227] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 227] Pachet 21 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 228] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 229] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 230] Generat pachet 22 cu reward 568 si deadline la tick 240
-[TICK 230] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 230] Pachet 22 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] la timp.
-[TICK 231] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 232] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 233] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 234] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 235] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 236] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 237] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 238] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 239] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 240] Generat pachet 23 cu reward 656 si deadline la tick 257
-[TICK 240] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 241] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 242] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 243] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 243] Pachet 23 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 244] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 245] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 246] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 247] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 248] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 249] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 250] Generat pachet 24 cu reward 394 si deadline la tick 270
-[TICK 250] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 251] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 252] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 253] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 254] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 255] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 256] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 257] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 258] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 259] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 260] Generat pachet 25 cu reward 403 si deadline la tick 272
-[TICK 260] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 261] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 261] Pachet 24 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] la timp.
-[TICK 262] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 263] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 264] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 265] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 266] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 267] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 267] Pachet 25 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 268] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 269] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 270] Generat pachet 26 cu reward 237 si deadline la tick 287
-[TICK 270] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 271] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 272] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 273] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 273] Pachet 26 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] la timp.
-[TICK 274] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 275] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 276] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 277] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 278] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 279] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 280] Generat pachet 27 cu reward 281 si deadline la tick 299
-[TICK 280] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 281] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 282] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 283] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 284] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 285] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 286] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 287] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 288] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 289] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 289] Pachet 27 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] la timp.
-[TICK 290] Generat pachet 28 cu reward 509 si deadline la tick 303
-[TICK 290] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 290] Pachet 28 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 291] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 292] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 293] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 294] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 295] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 296] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 297] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 298] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 299] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
+[TICK 200] Generat pachet 19 cu reward 537 si deadline la tick 220
+[TICK 210] Generat pachet 20 cu reward 590 si deadline la tick 228
+[TICK 214] Pachet 15 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (38 ticks). Penalizare: 50 credite
+[TICK 220] Generat pachet 21 cu reward 660 si deadline la tick 234
+[TICK 230] Generat pachet 22 cu reward 404 si deadline la tick 245
+[TICK 237] Pachet 18 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (35 ticks). Penalizare: 50 credite
+[TICK 240] Generat pachet 23 cu reward 291 si deadline la tick 260
+[TICK 250] Generat pachet 24 cu reward 790 si deadline la tick 261
+[TICK 258] Pachet 22 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (13 ticks). Penalizare: 50 credite
+[TICK 260] Generat pachet 25 cu reward 243 si deadline la tick 272
+[TICK 270] Generat pachet 26 cu reward 551 si deadline la tick 287
+[TICK 280] Generat pachet 27 cu reward 227 si deadline la tick 290
+[TICK 282] Pachet 21 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (48 ticks). Penalizare: 50 credite
+[TICK 286] Pachet 24 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] cu intarziere (25 ticks). Penalizare: 50 credite
+[TICK 290] Generat pachet 28 cu reward 758 si deadline la tick 301
 [TICK 300] --- HEARTBEAT: Tick 300 ---
-[TICK 300] Generat pachet 29 cu reward 544 si deadline la tick 314
-[TICK 300] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 301] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 302] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 303] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 304] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 305] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 306] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 307] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 307] Pachet 29 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 308] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 309] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 310] Generat pachet 30 cu reward 555 si deadline la tick 322
-[TICK 310] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 311] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 311] Pachet 30 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 312] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 313] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 314] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 315] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 316] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 317] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 318] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 319] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 320] Generat pachet 31 cu reward 771 si deadline la tick 337
-[TICK 320] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Livrare Pachet 31 | Dist. Dest: 1.00
-[TICK 320] Pachet 31 RECEPTIONAT de client. Livrat de Agent 2 [DRONA] la timp.
-[TICK 321] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 322] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 323] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 324] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 325] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 326] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 327] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 328] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 329] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 330] Generat pachet 32 cu reward 328 si deadline la tick 349
-[TICK 330] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 331] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 332] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 333] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 334] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 335] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 336] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 337] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 338] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 339] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 340] Generat pachet 33 cu reward 420 si deadline la tick 359
-[TICK 340] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Livrare Pachet 33 | Dist. Dest: 0.00
-[TICK 340] Pachet 33 RECEPTIONAT de client. Livrat de Agent 2 [DRONA] la timp.
-[TICK 341] [TELEMETRIE DRONA 2] Bat: 80.0% | Pos: (16,12) | Status: Idle
-[TICK 342] [TELEMETRIE DRONA 2] Bat: 70.0% | Pos: (15,12) | Status: Idle
-[TICK 342] [INFO] Drona 2 a ajuns la statie si INCEPE INCARCAREA. (Baterie curenta: 70.0%)
-[TICK 342] Pachet 32 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] la timp.
-[TICK 343] [TELEMETRIE DRONA 2] Bat: 95.0% | Pos: (15,12) | Status: Idle
-[TICK 344] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 344] [INFO] Drona 2 a TERMINAT incarcarea (100%).
-[TICK 345] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 346] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 347] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 348] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 349] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 350] Generat pachet 34 cu reward 430 si deadline la tick 363
-[TICK 350] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 350] Pachet 34 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] la timp.
-[TICK 351] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 352] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 353] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 354] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 355] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 356] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 357] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 358] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 359] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 360] Generat pachet 35 cu reward 406 si deadline la tick 373
-[TICK 360] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 361] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 362] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 363] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 364] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 365] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 366] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 367] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 368] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 368] Pachet 35 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 369] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 370] Generat pachet 36 cu reward 751 si deadline la tick 384
-[TICK 370] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Livrare Pachet 36 | Dist. Dest: 5.39
-[TICK 371] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (13,11) | Status: Livrare Pachet 36 | Dist. Dest: 4.00
-[TICK 372] [TELEMETRIE DRONA 2] Bat: 80.0% | Pos: (13,8) | Status: Livrare Pachet 36 | Dist. Dest: 1.00
-[TICK 372] Pachet 36 RECEPTIONAT de client. Livrat de Agent 2 [DRONA] la timp.
-[TICK 373] [TELEMETRIE DRONA 2] Bat: 70.0% | Pos: (13,7) | Status: Idle
-[TICK 374] [TELEMETRIE DRONA 2] Bat: 60.0% | Pos: (15,8) | Status: Idle
-[TICK 375] [TELEMETRIE DRONA 2] Bat: 50.0% | Pos: (15,11) | Status: Idle
-[TICK 376] [TELEMETRIE DRONA 2] Bat: 40.0% | Pos: (15,12) | Status: Idle
-[TICK 376] [INFO] Drona 2 a ajuns la statie si INCEPE INCARCAREA. (Baterie curenta: 40.0%)
-[TICK 377] [TELEMETRIE DRONA 2] Bat: 65.0% | Pos: (15,12) | Status: Idle
-[TICK 378] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (15,12) | Status: Idle
-[TICK 379] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 379] [INFO] Drona 2 a TERMINAT incarcarea (100%).
-[TICK 380] Generat pachet 37 cu reward 663 si deadline la tick 395
-[TICK 380] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 380] Pachet 37 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] la timp.
-[TICK 381] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 382] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 383] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 384] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 385] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 386] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 387] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 388] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 389] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 390] Generat pachet 38 cu reward 596 si deadline la tick 400
-[TICK 390] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 391] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 392] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 393] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 394] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 395] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 395] Pachet 38 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 396] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 397] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 398] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 399] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 400] --- HEARTBEAT: Tick 400 ---
-[TICK 400] Generat pachet 39 cu reward 699 si deadline la tick 412
-[TICK 400] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 401] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (15,12) | Status: Idle
-[TICK 402] [TELEMETRIE DRONA 2] Bat: 80.0% | Pos: (15,12) | Status: Idle
-[TICK 403] [TELEMETRIE DRONA 2] Bat: 70.0% | Pos: (15,12) | Status: Idle
-[TICK 404] [TELEMETRIE DRONA 2] Bat: 60.0% | Pos: (15,12) | Status: Idle
-[TICK 405] [TELEMETRIE DRONA 2] Bat: 50.0% | Pos: (15,12) | Status: Idle
-[TICK 406] [TELEMETRIE DRONA 2] Bat: 40.0% | Pos: (15,12) | Status: Idle
-[TICK 406] [INFO] Drona 2 a ajuns la statie si INCEPE INCARCAREA. (Baterie curenta: 40.0%)
-[TICK 407] [TELEMETRIE DRONA 2] Bat: 65.0% | Pos: (15,12) | Status: Idle
-[TICK 408] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (15,12) | Status: Idle
-[TICK 409] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 409] [INFO] Drona 2 a TERMINAT incarcarea (100%).
-[TICK 410] Generat pachet 40 cu reward 616 si deadline la tick 427
-[TICK 410] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 411] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 412] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 413] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 414] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 415] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 416] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 417] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 417] Pachet 40 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 418] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 418] Pachet 39 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (6 ticks). Penalizare: 50 credite
-[TICK 419] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 420] Generat pachet 41 cu reward 293 si deadline la tick 430
-[TICK 420] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 420] Pachet 41 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] la timp.
-[TICK 421] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 422] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 423] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 424] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 425] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 426] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 427] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 428] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 429] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Idle
-[TICK 430] Generat pachet 42 cu reward 417 si deadline la tick 441
-[TICK 430] [TELEMETRIE DRONA 2] Bat: 100.0% | Pos: (15,12) | Status: Livrare Pachet 42 | Dist. Dest: 1.00
-[TICK 430] Pachet 42 RECEPTIONAT de client. Livrat de Agent 2 [DRONA] la timp.
-[TICK 431] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 432] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 433] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 434] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 435] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 436] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 437] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 438] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 439] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 440] Generat pachet 43 cu reward 398 si deadline la tick 454
-[TICK 440] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 441] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 442] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 443] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 444] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 445] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 446] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 446] Pachet 43 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] la timp.
-[TICK 447] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 448] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 449] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Idle
-[TICK 450] Generat pachet 44 cu reward 685 si deadline la tick 462
-[TICK 450] [TELEMETRIE DRONA 2] Bat: 90.0% | Pos: (16,12) | Status: Livrare Pachet 44 | Dist. Dest: 13.00
-[TICK 451] [TELEMETRIE DRONA 2] Bat: 80.0% | Pos: (13,12) | Status: Livrare Pachet 44 | Dist. Dest: 10.30
-[TICK 452] [TELEMETRIE DRONA 2] Bat: 70.0% | Pos: (10,12) | Status: Livrare Pachet 44 | Dist. Dest: 7.81
-[TICK 453] [TELEMETRIE DRONA 2] Bat: 60.0% | Pos: (7,12) | Status: Livrare Pachet 44 | Dist. Dest: 5.83
-[TICK 454] [TELEMETRIE DRONA 2] Bat: 50.0% | Pos: (4,12) | Status: Livrare Pachet 44 | Dist. Dest: 5.00
-[TICK 455] [TELEMETRIE DRONA 2] Bat: 40.0% | Pos: (4,9) | Status: Livrare Pachet 44 | Dist. Dest: 2.00
-[TICK 455] Pachet 44 RECEPTIONAT de client. Livrat de Agent 2 [DRONA] la timp.
-[TICK 456] [TELEMETRIE DRONA 2] Bat: 30.0% | Pos: (4,7) | Status: Idle
-[TICK 457] [TELEMETRIE DRONA 2] Bat: 20.0% | Pos: (7,7) | Status: Idle
-[TICK 458] [TELEMETRIE DRONA 2] Bat: 10.0% | Pos: (8,9) | Status: Idle
-[TICK 458] !!! DECES AGENT !!! ID: 2 [DRONE] a murit la coordonatele (8, 9). Baterie epuizata.
-[TICK 460] Generat pachet 45 cu reward 406 si deadline la tick 470
-[TICK 467] Pachet 45 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 470] Generat pachet 46 cu reward 303 si deadline la tick 490
-[TICK 480] Generat pachet 47 cu reward 687 si deadline la tick 494
-[TICK 481] Pachet 46 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] la timp.
-[TICK 490] Generat pachet 48 cu reward 510 si deadline la tick 502
-[TICK 498] Pachet 48 RECEPTIONAT de client. Livrat de Agent 5 [SCUTER] la timp.
-[TICK 500] --- HEARTBEAT: Tick 500 ---
-[TICK 500] Generat pachet 49 cu reward 595 si deadline la tick 516
-[TICK 501] Pachet 47 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (7 ticks). Penalizare: 50 credite
-[TICK 516] Pachet 49 RECEPTIONAT de client. Livrat de Agent 4 [ROBOT] la timp.
-[TICK 600] --- HEARTBEAT: Tick 600 ---
-[TICK 700] --- HEARTBEAT: Tick 700 ---
-[TICK 800] --- HEARTBEAT: Tick 800 ---
-[TICK 900] --- HEARTBEAT: Tick 900 ---
-[TICK 1000] --- HEARTBEAT: Tick 1000 ---
-[TICK 1000] Raport salvat in simulation_report.txt
-[TICK 1000] === SIMULARE TERMINATA ===
-[TICK 1000] Durata: 2 ms
+[TICK 300] Generat pachet 29 cu reward 499 si deadline la tick 314
+[TICK 310] Generat pachet 30 cu reward 329 si deadline la tick 322
+[TICK 320] Generat pachet 31 cu reward 643 si deadline la tick 338
+[TICK 330] Generat pachet 32 cu reward 201 si deadline la tick 341
+[TICK 333] Pachet 23 RECEPTIONAT de client. Livrat de Agent 3 [ROBOT] cu intarziere (73 ticks). Penalizare: 50 credite
+[TICK 336] !!! DECES AGENT !!! ID: 4 [ROBOT] a murit la coordonatele (1, 5). Baterie epuizata.
+[TICK 340] Generat pachet 33 cu reward 348 si deadline la tick 354
+[TICK 350] Generat pachet 34 cu reward 339 si deadline la tick 360
+[TICK 360] Generat pachet 35 cu reward 769 si deadline la tick 371
+[TICK 370] Generat pachet 36 cu reward 294 si deadline la tick 390
+[TICK 380] Generat pachet 37 cu reward 436 si deadline la tick 390
+[TICK 383] !!! DECES AGENT !!! ID: 3 [ROBOT] a murit la coordonatele (1, 5). Baterie epuizata.
+[TICK 383] Toti agentii au murit! Simularea se opreste prematur.
+[TICK 383] Raport salvat in simulation_report.txt
+[TICK 383] === SIMULARE TERMINATA ===
+[TICK 383] Durata: 2 ms

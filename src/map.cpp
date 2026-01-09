@@ -111,7 +111,6 @@ void ProceduralMapGenerator::generate(Map& map) {
     }
 
     if (!valid) {
-        std::cerr << "Eroare: Harta invalida dupa multiple incercari.\n";
-        exit(1);
+	throw "Eroare: Harta invalida dupa multiple incercari.\n";
     }
 }

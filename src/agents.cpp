@@ -161,11 +161,13 @@ Agent::Agent(int _id, int x, int y, AgentType _type,
     : id(_id), type(_type), position({x, y}), target({x, y}),
       battery(_maxBattery), maxBattery(_maxBattery), 
       consumption(_consumption), costPerTick(_costPerTick),
-      state(IDLE), currentPackage(nullptr) {}
+      state(IDLE), currentPackage(nullptr) {
+	  hasPhysicalPackage = false;
+      }
 
 void Agent::charge() {
     if (state == CHARGING || state == IDLE) {
-        battery += maxBattery * 0.25f; // 25% per tick
+        battery += maxBattery * 0.25f; 
         if (battery > maxBattery) {
             battery = maxBattery;
         }
@@ -174,6 +176,7 @@ void Agent::charge() {
 
 void Agent::assignTask(Package* pkg, Point dest) {
     currentPackage = pkg;
+    hasPhysicalPackage = false;
     target = dest;
     state = MOVING;
 }
@@ -181,7 +184,7 @@ void Agent::assignTask(Package* pkg, Point dest) {
 void Agent::sendToCharge(Point station) {
     target = station;
     state = MOVING;
-    // Dacă avea pachet, îl anulăm temporar
+   
     if (currentPackage) {
         currentPackage->assigned = false;
         currentPackage = nullptr;
@@ -203,16 +206,17 @@ Drone::Drone(int id, int x, int y)
 
 void Drone::move(const Map& map) {
     (void)map;
-    
-    if (state != MOVING) return;
-    //nu e nevoie de harta la drona, ca zboara peste orice
-    // Consumă baterie
+
+    // float currentCons = (state == MOVING) ? consumption : (consumption * 0.05f);
+    // battery -= currentCons;
     battery -= consumption;
     if (battery <= 0) {
         battery = 0;
         state = DEAD;
         return;
     }
+    
+    if (state != MOVING) return;
     
     // Drona se mișcă în linie dreaptă, ignorând obstacolele
     int speed = static_cast<int>(getSpeed());
@@ -226,7 +230,20 @@ void Drone::move(const Map& map) {
     
     // Verifică dacă a ajuns la destinație
     if (position == target) {
-        state = IDLE;
+	if (currentPackage != nullptr && !hasPhysicalPackage) {
+            if (position == map.getBasePosition()) {
+                hasPhysicalPackage = true;        
+                target = currentPackage->destCoord; 
+            }
+        }
+        
+        else if (currentPackage != nullptr && hasPhysicalPackage) {
+            state = IDLE;
+        }
+        // CAZUL: CHARGING (Am ajuns la stație)
+        else {
+            state = IDLE;
+        }
     }
 }
 
@@ -235,16 +252,17 @@ Robot::Robot(int id, int x, int y)
     : Agent(id, x, y, ROBOT, 300.0f, 2.0f, 1) {}
 
 void Robot::move(const Map& map) {
-    if (state != MOVING) return;
     
-    // Consumă baterie
+    // float currentCons = (state == MOVING) ? consumption : (consumption * 0.05f);
+    // battery -= currentCons;
     battery -= consumption;
     if (battery <= 0) {
         battery = 0;
         state = DEAD;
         return;
     }
-    
+
+    if (state != MOVING) return;
     // Robotul folosește pathfinding pentru a evita zidurile
     if (position != target) {
         Point nextStep = findNextStepBFS(position, target, map);
@@ -252,8 +270,21 @@ void Robot::move(const Map& map) {
     }
     
     // Verifică dacă a ajuns la destinație
-    if (position == target) {
-        state = IDLE;
+   if (position == target) {
+	if (currentPackage != nullptr && !hasPhysicalPackage) {
+            if (position == map.getBasePosition()) {
+                hasPhysicalPackage = true;        
+                target = currentPackage->destCoord; 
+            }
+        }
+        
+        else if (currentPackage != nullptr && hasPhysicalPackage) {
+            state = IDLE;
+        }
+        // CAZUL: CHARGING (Am ajuns la stație)
+        else {
+            state = IDLE;
+        }
     }
 }
 
@@ -262,9 +293,10 @@ Scooter::Scooter(int id, int x, int y)
     : Agent(id, x, y, SCOOTER, 200.0f, 5.0f, 4) {}
 
 void Scooter::move(const Map& map) {
-    if (state != MOVING) return;
     
-    // Consumă baterie
+    
+    //float currentCons = (state == MOVING) ? consumption : (consumption * 0.05f);
+    // battery -= currentCons;
     battery -= consumption;
     if (battery <= 0) {
         battery = 0;
@@ -272,6 +304,7 @@ void Scooter::move(const Map& map) {
         return;
     }
     
+    if (state != MOVING) return;
     // Scooterul se mișcă cu viteza 2, folosind pathfinding
     int speed = static_cast<int>(getSpeed());
     
@@ -282,7 +315,20 @@ void Scooter::move(const Map& map) {
     
     // Verifică dacă a ajuns la destinație
     if (position == target) {
-        state = IDLE;
+	if (currentPackage != nullptr && !hasPhysicalPackage) {
+            if (position == map.getBasePosition()) {
+                hasPhysicalPackage = true;        
+                target = currentPackage->destCoord; 
+            }
+        }
+        
+        else if (currentPackage != nullptr && hasPhysicalPackage) {
+            state = IDLE;
+        }
+        // CAZUL: CHARGING (Am ajuns la stație)
+        else {
+            state = IDLE;
+        }
     }
 }
 

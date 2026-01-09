@@ -66,7 +66,7 @@ private:
         }
     };
     
-    // Parametri de optimizare
+   
     struct OptimizationParams {
         double profitWeight = 0.50;      // Importanța profitului imediat
         double safetyWeight = 0.30;      // Importanța siguranței bateriei

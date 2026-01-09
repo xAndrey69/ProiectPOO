@@ -2,28 +2,29 @@
 
 SETARI:
 Ticks totali: 1000
-Ticks rulati: 1000
+Ticks rulati: 383
 Dimensiune harta: 20x20
 Agenti initiali: 6
-Pachete generate: 50
+Pachete generate: 38
 
 STATISTICI OPERATIONALE:
-Agenti supravietuiti: 3
-Agenti pierduti: 3
-Pachete livrate: 50
-Pachete nelivrate: 0
-Rata de succes: 100.00%
+Agenti supravietuiti: 0
+Agenti pierduti: 6
+Pachete livrate: 23
+Pachete nelivrate: 15
+Rata de succes: 60.53%
 
 STATISTICI FINANCIARE:
-Venituri totale: 24668 credite
-Costuri totale: 2984 credite
-Penalizari totale: 1700 credite
-  - Agent mort: 1500 credite
-  - Pachete intarziate: 200 credite (50 per pachet)
-  - Pachete nelivrate: 0 credite (200 per pachet)
-PROFIT NET: 19984 credite
+Profit Maxim: 9715 credite
+Venituri totale: 11235 credite
+Costuri totale: 1520 credite
+Penalizari totale: 6700 credite
+  - Agent mort: 3000 credite
+  - Pachete intarziate: 700 credite (50 per pachet)
+  - Pachete nelivrate: 3000 credite (200 per pachet)
+PROFIT NET: 3015 credite
 
 DETALII AGENTI:
 Drone: 0/3 supravietuitoare
-Roboti: 2/2 supravietuitoare
-Scutere: 1/1 supravietuitoare
+Roboti: 0/2 supravietuitoare
+Scutere: 0/1 supravietuitoare
